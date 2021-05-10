@@ -82,7 +82,7 @@ class Inicio extends StatelessWidget {
                       child: RaisedButton(
                         color: Colors.white,
                         shape: new RoundedRectangleBorder(borderRadius: BorderRdius.circular(10.0)),
-                        onPresed: () {
+                        onPressed: () {
                           Navigator.pushNamed(context, "/inicio");
                         },
                         child: SizedBox(
@@ -99,7 +99,28 @@ class Inicio extends StatelessWidget {
                       ), //fin de boton inicio
                     ) // fin del padding
                   ], // fin de widget[]
-                ), //fin columna interna
+                ), //fin columna c1 interna
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: RaisedButton(
+                        color: Colors.white,
+                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/empresa");
+                        },
+                        child: SizedBox(
+                          width: 100,
+                          height: 100,
+                          child: Center(
+                            child: Text("EMPRESA", textAlign: TextAlign.center),
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ), //fin r1 columna 2
               ], //fin del widget[]
             ), //fin de fila 1
           ], //fin del widget []
