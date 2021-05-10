@@ -74,7 +74,7 @@ class Inicio extends StatelessWidget {
           children : <Widget>[
          Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          
+          children: <Widget>[
           Column(
            children: <Widget>[
              Padding(
@@ -86,7 +86,7 @@ class Inicio extends StatelessWidget {
                    borderRadius: BorderRdius.circular(10.0)
                  ),
                  onpresed: (){
-                   Navigator.pushNamed(context, "/inicio")
+                   Navigator.pushNamed(context, "/inicio"),
                  },
                  child :SizedBox(
                    width: 100,
